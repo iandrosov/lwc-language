@@ -3,6 +3,10 @@
 #
 
 package.xml
+**appMenu
+**appSwitcher
+**objectTranslations
+
 **/jsconfig.json
 
 **/.eslintrc.json

@@ -1,0 +1,26 @@
+<template>
+    
+    <lightning-card title="LanguageAPITest" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <lightning-layout vertical-align="end" class="slds-m-bottom_small">
+                <lightning-layout-item flexibility="grow">
+                    <lightning-input type="input" onchange={handleModelChange} label="Model" value={model}></lightning-input>
+                    <lightning-input type="input" onchange={handleTokenChange} label="Token" value={token}></lightning-input>
+                    <lightning-input type="input" onchange={handleDocumentChange} label="Text" value={document}></lightning-input>
+
+                </lightning-layout-item>
+                <lightning-layout-item class="slds-p-left_xx-small">
+                    <lightning-button label="Evaluate" onclick={handleTextEvaluation}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+            <template if:true={textEval}>
+                <template for:each={textEval} for:item="prediction">
+                    <p key={prediction.label}>{prediction.label}</p>
+                    <p key={prediction.probability}>{prediction.probability}</p>
+                </template>
+            </template>
+        </div>
+
+    </lightning-card>
+
+</template>

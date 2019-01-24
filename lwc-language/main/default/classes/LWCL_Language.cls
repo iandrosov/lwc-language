@@ -82,7 +82,7 @@ public class LWCL_Language {
     }
 
     public class Prediction {
-        public String label {get;set;}
-        public Double probability {get;set;}
+        @AuraEnabled public String label {get;set;}
+        @AuraEnabled public Double probability {get;set;}
     }
 }
