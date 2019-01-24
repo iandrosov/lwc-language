@@ -1,3 +1,12 @@
+/**
+ *
+String doc = 'the presentation was great and I learned a lot';
+String model = 'CommunitySentiment';
+String access_token = '<TOKEN GOES HERE>';
+
+List<LWCL_Language.Prediction> pList = LWCL_Language.sentiment(doc, access_token, model);
+System.debug('### result: '+pList);
+ */
 public class LWCL_Language {
 
     public static String LANGUAGE_API = 'https://api.einstein.ai/v2/language';
