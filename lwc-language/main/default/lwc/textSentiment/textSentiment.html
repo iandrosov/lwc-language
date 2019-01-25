@@ -15,7 +15,7 @@
             </lightning-layout>
             <template if:true={textEval}>
                 <template for:each={textEval} for:item="prediction">
-                    <p key={prediction.label}>{prediction.label}-{prediction.probability}</p>
+                    <p key={prediction.label}>{prediction.label}-{prediction.probability} - ({prediction.probPercent}%)</p>
                     <p key={prediction.probability}><lightning-progress-bar value={prediction.probPercent} size="large" variant="circular"></lightning-progress-bar></p>
                 </template>
             </template>
