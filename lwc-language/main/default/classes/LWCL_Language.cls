@@ -63,6 +63,7 @@ public class LWCL_Language {
                                     if (parser.getCurrentToken() == JSONToken.START_OBJECT) {
                                         // Read entire probability object
                                         Prediction probability = (Prediction)parser.readValueAs(Prediction.class);
+                                        probability.probPercent = probability.probability * 100;
                                         predictions.add(probability);
                                     }
                                 }
@@ -84,5 +85,7 @@ public class LWCL_Language {
     public class Prediction {
         @AuraEnabled public String label {get;set;}
         @AuraEnabled public Double probability {get;set;}
+
+        @AuraEnabled public Double probPercent {get;set;}
     }
 }
