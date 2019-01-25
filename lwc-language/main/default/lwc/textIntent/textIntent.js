@@ -4,7 +4,7 @@ import findTextIntent from '@salesforce/apex/LWCL_LangController.findTextIntent'
 export default class TextIntent extends LightningElement {
     @track document = '';
     @track token = '';
-    @track model = '';
+    @track model = 'NPEV3WTODBTY4XHJBL3AKLMWJE';
     @track textEval;
 
     handleDocumentChange(event){
