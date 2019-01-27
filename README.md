@@ -59,9 +59,6 @@ There are two ways to install LWC Fortune Teller App:
     ```
     sfdx force:org:open -u lwc-laguage
     ```
-1. In the new scratch org assign LWC Fortune Teller permission set to your System Admin user account that grants access to the app and tabs.
-`sfdx force:user:permset:assign -n LWC_FortuneTeller`
-
 
 1. In App Launcher, select the **LWC Fortune Teller** app.
 
@@ -70,7 +67,7 @@ There are two ways to install LWC Fortune Teller App:
 
 1. [Sign up](https://www.salesforce.com/form/signup/prerelease-spring19/) for a Spring '19 pre-release org, enable My Domain, and deploy it to all users.
 
-1. Click (Under Construction) to install the unlocked package in your Spring '19 org.
+1. [Click](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB0000000K9npIAC) to install the unlocked package in your Spring '19 org. This package needs access to AI API api.einstein.ai user will be requested to authorize this remote setting during the install.
 
 1. Select **Install for All Users**
 
@@ -84,5 +81,9 @@ There are two ways to install LWC Fortune Teller App:
 
 
 ## Issues
+
+User may get a message during the package installation, that it took too long and notification email will be sent. This can be expected in some orgs, just check the email ensure the install did not have errors and the app should be ready to use.
+
+Ensure that MYDomain is enabled on the target org and deploy it to all users, Lightning Web components require My Domain.
 
 
