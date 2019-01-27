@@ -1,11 +1,18 @@
 {
-  "packageDirectories": [
-    {
-      "path": "lwc-language",
-      "default": true
+    "packageDirectories": [
+        {
+            "path": "lwc-language",
+            "default": true,
+            "package": "lwclanguage",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
+        }
+    ],
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "45.0",
+    "packageAliases": {
+        "lwclanguage": "0HoB00000008OwtKAE",
+        "lwclanguage@0.1.0-1": "04tB0000000K9npIAC"
     }
-  ],
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "45.0"
 }
