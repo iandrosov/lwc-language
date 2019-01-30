@@ -1,8 +1,8 @@
-# SFDX Project FortuneTeller App
+# SFDX Project - FortuneTeller App
 
-This sfdx project is Einstein Language API based app built with Lightning Web Components. LWC provides User Interface to test Intent and Sentiment APIs.
+This sfdx project is Einstein Language API app built with Lightning Web Components. LWC provides User Interface to test Intent and Sentiment Einstein Platform Services APIs.
 
-The app is built with Salesforce DX using Lightning Web Components that only available in Spring 19 release. can be used on Spring 19 pre-release developer or Scratch org with API version 45.00.
+The app is built with Salesforce DX using Lightning Web Components that are only available from Spring 19 release, Salesforce API version 45.0 and above. The project can be used on Spring 19 pre-release developer or Scratch org with API version 45.00.
 
 ## Set Up Your Environment
 To use the app need to [signup](https://api.einstein.ai/signup
